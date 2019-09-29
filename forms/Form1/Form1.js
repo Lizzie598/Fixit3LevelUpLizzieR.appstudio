@@ -12,10 +12,10 @@ function homeLoan(loanAmount, timeLength, interestRateH) {
   return monthlyPaymentHouse
 }
 
-/*
+
 //main program
 let calculator = prompt("Which calculator would you like to use?")
-*/
+if (calculator = "car loan") {
 
 //main program for car loan
 let loanTotal = prompt("How much is your loan?")
@@ -30,10 +30,11 @@ do {
   alert(`A car loan for ${loanTotal} over ${timePeriod} months at ${interestRate} interest would have a monthly payment of ${myCarLoan}`);
 }
   while(myCarLoan[i] !== 0);
-    
+} else {
+  
 //main program for house loan
 let loanAmount = prompt("How much is your loan?")
-let timeLength = prompt("How many months is your loan for?")
+let timeLength = prompt("How many months is your loan for? (in months, NOT years)")
 let interestRateH = prompt("What is your interest rate? (decimal form only)")
 let myHouseLoan = homeLoan(loanAmount, timeLength, interestRateH)
 alert(`A home loan for ${loanAmount} over ${timeLength} months at ${interestRateH} interest would have a monthly payment of ${myHouseLoan}`)
@@ -44,3 +45,4 @@ do {
   alert(`A home loan for ${loanAmount} over ${timeLength} months at ${interestRateH} interest would have a monthly payment of ${myHouseLoan}`);
 }
   while(myHouseLoan[i] !== 0);
+}
