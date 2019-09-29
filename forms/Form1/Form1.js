@@ -20,5 +20,6 @@ alert(`A car loan for ${loanTotal} over ${timePeriod} months at ${interestRate} 
 var i = 0;
 do {
   myCarLoan = carLoan(loanTotal, timePeriod, interestRate);
+  alert(`A car loan for ${loanTotal} over ${timePeriod} months at ${interestRate} interest would have a monthly payment of ${myCarLoan}`);
 }
   while(myCarLoan[i] !== 0);
