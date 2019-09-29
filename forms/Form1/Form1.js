@@ -16,3 +16,9 @@ let timePeriod = prompt("How many months is your loan for?")
 let interestRate = prompt("What is your interest rate? (decimal form only)")
 let myCarLoan = carLoan(loanTotal, timePeriod, interestRate)
 alert(`A car loan for ${loanTotal} over ${timePeriod} months at ${interestRate} interest would have a monthly payment of ${myCarLoan}`)
+
+var i = 0;
+do {
+  myCarLoan = carLoan(loanTotal, timePeriod, interestRate);
+}
+  while(myCarLoan[i] !== 0);
